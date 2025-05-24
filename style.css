@@ -1,0 +1,5 @@
+
+body { font-family: sans-serif; padding: 20px; background: #f9f9f9; }
+h1 { color: #333; }
+#form input { margin: 5px; }
+table, th, td { border: 1px solid #ccc; border-collapse: collapse; padding: 5px; margin-top: 10px; }

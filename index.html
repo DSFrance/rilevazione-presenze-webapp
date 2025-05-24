@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Rilevazione Presenze</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rilevazione Presenze</h1>
+  <div id="app">
+    <label>Dipendente: <select id="employeeSelect"></select></label>
+    <button onclick="addEmployee()">➕ Aggiungi Dipendente</button>
+    <div id="form">
+      <input type="date" id="dateInput">
+      <input type="time" id="entrata" placeholder="Entrata">
+      <input type="time" id="inizioPausa" placeholder="Inizio Pausa">
+      <input type="time" id="finePausa" placeholder="Fine Pausa">
+      <input type="time" id="uscita" placeholder="Uscita">
+      <input type="text" id="note" placeholder="Note">
+      <button onclick="salva()">Salva</button>
+    </div>
+    <button onclick="esporta()">📤 Esporta Excel</button>
+    <table id="presenzeTable"></table>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
